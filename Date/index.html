@@ -1,0 +1,86 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <p>
+        1. Write a JavaScript function to check whether an `input` is a date object or not.
+
+        Test Data :
+        console.log(is_date("October 13, 2014 11:13:00"));
+        console.log(is_date(new Date(86400000)));
+        console.log(is_date(new Date(99,5,24,11,33,30,0)));
+        console.log(is_date([1, 2, 4, 0]));
+        Output :
+        false
+        true
+        true
+        false
+        <button onclick="is_date([1, 2, 4, 0])"> [1, 2, 4, 0]</button>
+        <button onclick="is_date(new Date(86400000))"> new Date(86400000)</button>
+
+    </p>
+
+    <p>
+        2. Write a JavaScript function to get the current date.
+
+        Note : Pass a separator as an argument.
+        Test Data :
+        console.log(curday('/'));
+        console.log(curday('-'));
+        Output :
+        "11/13/2014"
+        "11-13-2014"
+        <button onclick="curday()"></button>
+    </p>
+
+    <p>
+        4. Write a JavaScript function to get the month name from a particular date.
+
+        Test Data :
+        console.log(month_name(new Date("10/11/2009")));
+        console.log(month_name(new Date("11/13/2014")));
+        Output :
+        "October"
+        "November"
+        <button onclick='month_name("10/11/2009")'> "10/11/2009"</button>
+        <button onclick='month_name("11/13/2014")'> "11/13/2014"</button>
+    </p>
+
+    <p>
+        5. Write a JavaScript function to compare dates (i.e. greater than, less than or equal to).
+
+        Test Data :
+        console.log(compare_dates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:00'))); //btn 1
+        console.log(compare_dates(new Date('11/14/2013 00:01'), new Date('11/14/2013 00:00'))); //btn 2
+        console.log(compare_dates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:01')));
+        Output :
+        "Date1 = Date2"
+        "Date1 > Date2"
+        "Date2 > Date1"
+        <button onclick="compare_dates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:00'))"> 1</button>
+        <button onclick="compare_dates(new Date('11/14/2013 00:01'), new Date('11/14/2013 00:00'))"> 2</button>
+    </p>
+
+    <p>
+        8. Write a JavaScript function to get the difference between two dates in days.
+
+        Test Data :
+        console.log(date_diff_indays('04/02/2014', '11/04/2014'));
+        console.log(date_diff_indays('12/02/2014', '11/04/2014'));
+        Output :
+        216
+        -28
+        <button onclick="date_diff_indays('04/02/2014', '11/04/2014')"></button>
+        <button onclick="date_diff_indays('12/02/2014', '11/04/2014')"></button>
+    </p>
+</body>
+
+</html>
